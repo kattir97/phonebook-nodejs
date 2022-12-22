@@ -1,7 +1,4 @@
-const { firestore } = require("firebase-admin");
-const fs = require("fs");
 const { db } = require("../firebase");
-// let persons = JSON.parse(fs.readFileSync(`${__dirname}/../db.json`));
 
 exports.checkId = async (req, res, next) => {
   const snapshot = await db.collection("contacts").get();

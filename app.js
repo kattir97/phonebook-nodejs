@@ -4,7 +4,6 @@ const dotenv = require("dotenv");
 const fs = require("fs");
 const cors = require("cors");
 const morgan = require("morgan");
-const persons = JSON.parse(fs.readFileSync(`${__dirname}/db.json`));
 dotenv.config({ path: "./config.env" });
 const personRouter = require("./routes/personRoutes");
 
